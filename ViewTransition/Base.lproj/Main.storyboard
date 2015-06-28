@@ -16,30 +16,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UI8-yC-ejf">
+                                <rect key="frame" x="200" y="200" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="85r-zR-Cjw"/>
+                                </constraints>
+                                <state key="normal" title="CrossDissolve">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="crossDissolveButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Eec-Xr-9MQ"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fib-U8-QDS">
                                 <rect key="frame" x="200" y="300" width="200" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="E6q-jd-1HX"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="FlipHorizontal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="flipHorizontalButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QWa-PD-gYp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CH-lW-Pbr">
-                                <rect key="frame" x="200" y="400" width="200" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="CE9-y4-xYz"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="partialCurlButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="E4I-F8-eTu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRl-2L-uMd">
@@ -48,34 +48,34 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="igi-Ho-JnD"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="CoverVertical">
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="coverVerticalButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HZK-IO-enU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UI8-yC-ejf">
-                                <rect key="frame" x="200" y="200" width="200" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CH-lW-Pbr">
+                                <rect key="frame" x="200" y="401" width="200" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="85r-zR-Cjw"/>
+                                    <constraint firstAttribute="width" constant="200" id="6B2-wM-cC8"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="PartialCurl">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="crossDissolveButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Eec-Xr-9MQ"/>
+                                    <action selector="partialCurlButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="E4I-F8-eTu"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.50196081399917603" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="2CH-lW-Pbr" firstAttribute="top" secondItem="0yQ-vT-it0" secondAttribute="bottom" constant="380" id="2zf-SP-JTw"/>
                             <constraint firstItem="Fib-U8-QDS" firstAttribute="top" secondItem="0yQ-vT-it0" secondAttribute="bottom" constant="280" id="BcB-ea-beN"/>
                             <constraint firstItem="UI8-yC-ejf" firstAttribute="top" secondItem="0yQ-vT-it0" secondAttribute="bottom" constant="180" id="JZB-gH-dCx"/>
+                            <constraint firstAttribute="centerX" secondItem="2CH-lW-Pbr" secondAttribute="centerX" id="WfD-ar-HgG"/>
                             <constraint firstItem="TRl-2L-uMd" firstAttribute="top" secondItem="0yQ-vT-it0" secondAttribute="bottom" constant="80" id="aCO-aj-Doc"/>
-                            <constraint firstAttribute="centerX" secondItem="2CH-lW-Pbr" secondAttribute="centerX" id="lfD-BK-kC7"/>
+                            <constraint firstItem="2CH-lW-Pbr" firstAttribute="top" secondItem="0yQ-vT-it0" secondAttribute="bottom" constant="381" id="jTf-sb-VBD"/>
                             <constraint firstAttribute="centerX" secondItem="Fib-U8-QDS" secondAttribute="centerX" id="n75-Tz-zaM"/>
                             <constraint firstAttribute="centerX" secondItem="UI8-yC-ejf" secondAttribute="centerX" id="wRL-UX-aPp"/>
                             <constraint firstAttribute="centerX" secondItem="TRl-2L-uMd" secondAttribute="centerX" id="xHk-WA-Ste"/>
