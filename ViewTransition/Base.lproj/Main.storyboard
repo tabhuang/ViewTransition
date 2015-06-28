@@ -1,25 +1,127 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="ViewTransition" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="0yQ-vT-it0"/>
+                        <viewControllerLayoutGuide type="bottom" id="ozA-Wr-c92"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fib-U8-QDS">
+                                <rect key="frame" x="200" y="300" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="E6q-jd-1HX"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipHorizontalButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QWa-PD-gYp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CH-lW-Pbr">
+                                <rect key="frame" x="200" y="400" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="CE9-y4-xYz"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="partialCurlButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="E4I-F8-eTu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRl-2L-uMd">
+                                <rect key="frame" x="200" y="100" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="igi-Ho-JnD"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="coverVerticalButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HZK-IO-enU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UI8-yC-ejf">
+                                <rect key="frame" x="200" y="200" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="85r-zR-Cjw"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="crossDissolveButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Eec-Xr-9MQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196081399917603" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2CH-lW-Pbr" firstAttribute="top" secondItem="0yQ-vT-it0" secondAttribute="bottom" constant="380" id="2zf-SP-JTw"/>
+                            <constraint firstItem="Fib-U8-QDS" firstAttribute="top" secondItem="0yQ-vT-it0" secondAttribute="bottom" constant="280" id="BcB-ea-beN"/>
+                            <constraint firstItem="UI8-yC-ejf" firstAttribute="top" secondItem="0yQ-vT-it0" secondAttribute="bottom" constant="180" id="JZB-gH-dCx"/>
+                            <constraint firstItem="TRl-2L-uMd" firstAttribute="top" secondItem="0yQ-vT-it0" secondAttribute="bottom" constant="80" id="aCO-aj-Doc"/>
+                            <constraint firstAttribute="centerX" secondItem="2CH-lW-Pbr" secondAttribute="centerX" id="lfD-BK-kC7"/>
+                            <constraint firstAttribute="centerX" secondItem="Fib-U8-QDS" secondAttribute="centerX" id="n75-Tz-zaM"/>
+                            <constraint firstAttribute="centerX" secondItem="UI8-yC-ejf" secondAttribute="centerX" id="wRL-UX-aPp"/>
+                            <constraint firstAttribute="centerX" secondItem="TRl-2L-uMd" secondAttribute="centerX" id="xHk-WA-Ste"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="211" y="323.99999999999994"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="PsL-a2-OWY">
+            <objects>
+                <viewController storyboardIdentifier="Detail" id="5Gc-BI-R2R" customClass="DetailViewController" customModule="ViewTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pIl-RR-3KK"/>
+                        <viewControllerLayoutGuide type="bottom" id="pds-AG-0Zp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vYX-2I-gc8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82D-s5-Dny">
+                                <rect key="frame" x="200" y="241" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.50196081399917603" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="llC-sN-wIT"/>
+                                </constraints>
+                                <state key="normal" title="Go Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goback:" destination="5Gc-BI-R2R" eventType="touchUpInside" id="lfK-Vd-39p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="82D-s5-Dny" secondAttribute="centerX" id="I1r-RW-w6F"/>
+                            <constraint firstAttribute="centerY" secondItem="82D-s5-Dny" secondAttribute="centerY" constant="44" id="MfB-Zy-76k"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xem-Uh-g1T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1017.9999999999999" y="323.99999999999994"/>
         </scene>
     </scenes>
 </document>

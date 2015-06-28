@@ -19,7 +19,37 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    @IBAction func coverVerticalButton(sender: AnyObject) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let detailView = storyboard.instantiateViewControllerWithIdentifier("Detail") as! UIViewController
+        detailView.modalTransitionStyle = UIModalTransitionStyle.CoverVertical
+        self.presentViewController(detailView, animated: true, completion: nil)
+    }
+    
 
+    @IBAction func crossDissolveButton(sender: AnyObject) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let detailView = storyboard.instantiateViewControllerWithIdentifier("Detail") as! UIViewController
+        detailView.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        self.presentViewController(detailView, animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func flipHorizontalButton(sender: AnyObject) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let detailView = storyboard.instantiateViewControllerWithIdentifier("Detail") as! UIViewController
+        detailView.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
+        self.presentViewController(detailView, animated: true, completion: nil)
+    }
+    
 
+    @IBAction func partialCurlButton(sender: AnyObject) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let detailView = storyboard.instantiateViewControllerWithIdentifier("Detail") as! UIViewController
+        detailView.modalTransitionStyle = UIModalTransitionStyle.PartialCurl
+        self.presentViewController(detailView, animated: true, completion: nil)
+    }
 }
 
